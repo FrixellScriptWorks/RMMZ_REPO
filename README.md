@@ -1,4 +1,4 @@
-# HELLO!
+# RMMZ_REPO
 
 Welcome to my RPG Maker MZ Repository. Here you can look at my simple works. What? Yes. I'm new in JavaScript so I need more time to learn and adapt so I can contribute to RPG Maker Community.
 
@@ -19,9 +19,10 @@ My plugins are tottaly free. But you must credits me when distributing. [See Mor
 Be careful, if some of my plugins has dependencies, you must direct to their terms of use too.
 
 ### Table of Contents
-
-1. [Customized Gold Rates] 
-
+--------------
+1. [Quality of Life](https://github.com/FrixellScriptWorks/RMMZ_REPO/tree/main/Quality%20of%20Life)
+   1. [Customized Gold Rates](https://github.com/FrixellScriptWorks/RMMZ_REPO/blob/main/Quality%20of%20Life/FrixellSW_2_GoldRate.js)
+--------------
 ## Contacts
 
 Contact me at bayujati50@gmail.com. Or you can notice me on issue page.
