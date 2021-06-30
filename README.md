@@ -23,6 +23,7 @@ Be careful, if some of my plugins has dependencies, you must direct to their ter
 --------------
 1. [Quality of Life](https://github.com/FrixellScriptWorks/RMMZ_REPO/tree/main/Quality%20of%20Life)
    1. [Customized Gold Rates](https://github.com/FrixellScriptWorks/RMMZ_REPO/blob/main/Quality%20of%20Life/FrixellSW_2_GoldRate.js)
+   2. [Extra Drops](https://github.com/FrixellScriptWorks/RMMZ_REPO/blob/main/Quality%20of%20Life/FrixellSW_2_ExtraDrops.js)
 --------------
 ## Contacts
 
