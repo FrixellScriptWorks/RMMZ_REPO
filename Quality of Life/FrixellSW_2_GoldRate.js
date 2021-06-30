@@ -1,5 +1,5 @@
 //============================================================================
-// Frixell SW - Customized Gold Rate (v. 1.00)
+// Frixell SW - Customized Gold Rate (v. 1.02)
 // FrixellSW_2_GoldRate.js
 //============================================================================
 
@@ -7,8 +7,8 @@ var Imported = Imported || {};
 Imported.FrixellSW_2_GoldRate = true;
 
 var FrixellSW = FrixellSW || {};
-FrixellSW.ExtraEngine = FrixellSW.ExtraEngine || {};
-FrixellSW.ExtraEngine.version = 1.0;
+FrixellSW.GoldRate = FrixellSW.GoldRate || {};
+FrixellSW.GoldRate.version = 1.01;
 
 //============================================================================
 /*:
@@ -97,8 +97,14 @@ FrixellSW.ExtraEngine.version = 1.0;
 * Changelogs
 * ============================================================================
 * 
+* Version 1.02 (30 June 2021)
+* * Documentation Change:
+*       - Changed import plugin system.
+* Version 1.01 (28 June 2021)
+* * Bug fixes:
+*       - Gold minus now counted as 0.
 * Version 1.00 (27 June 2021)
-* - Script Finished.
+*       - Plugin Finished.
 * 
 * ============================================================================
 * Known Bugs
@@ -180,8 +186,12 @@ Game_Troop.prototype.goldRate = function () {
     if ($gameParty.hasGoldDouble() == true) {
         return 2;
     } else if ($gameParty.goldMulti("multi") > 0) {
-        let rateGold = Math.ceil((1 * $gameParty.goldMulti("multi")) + Math.abs($gameParty.goldMulti("bonus")));
-        return rateGold;
+        let rateGold = (1 * $gameParty.goldMulti("multi") + Math.abs($gameParty.goldMulti("bonus")));
+        if (rateGold < 0) {
+	return 0;
+	} else {
+	return rateGold;
+	};
     } else {
         return 1;
     };
