@@ -1,5 +1,5 @@
 ﻿//============================================================================
-// Frixell SW - Extra Drops (v. 1.00)
+// Frixell SW - Extra Drops (v. 1.01)
 // FrixellSW_2_ExtraDrops.js
 //============================================================================
 
@@ -8,7 +8,7 @@ Imported.FrixellSW_2_ExtraDrops = true;
 
 var FrixellSW = FrixellSW || {};
 FrixellSW.ExtraDrops = FrixellSW.ExtraDrops || {};
-FrixellSW.ExtraDrops.version = 1.00;
+FrixellSW.ExtraDrops.version = 1.01;
 
 //============================================================================
 /*:
@@ -84,6 +84,12 @@ FrixellSW.ExtraDrops.version = 1.00;
 * Changelogs
 * ============================================================================
 * 
+* Version 1.01 (1 July 2021)
+* - Bug Fixes
+*   - Now item double drops should affect dropped items.
+* - Documentation Update
+*   - Added param replace instruction.
+*
 * Version 1.00 (30 June 2021)
 * - Plugin finished.
 * 
@@ -166,7 +172,7 @@ FrixellSW.ExtraDrops.version = 1.00;
         const extraDrops = this.enemy().fswExtraDrops;
 	    console.log(extraDrops);
         return extraDrops.reduce(function (r, di) {
-            if (di.kind != 0 && Math.random() < di.rates) {
+            if (di.kind != 0 && Math.random() < di.rates * this.dropItemRate()) {
                 return r.concat(this.itemObject(di.kind, di.dataId));
             } else {
                 return r;
