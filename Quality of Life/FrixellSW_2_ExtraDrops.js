@@ -52,6 +52,7 @@ FrixellSW.ExtraDrops.version = 1.01;
 * <param Drop x: y%>
 * - Place it in: Enemy Notetags.
 * - Added new drop parameter for use above the editor limits of tree.
+* - replace 'param' with Item, Weapon, or Armor.
 * - replace x with Item, Weapon, or Armor ID will be dropped.
 * - replace y with percentage value of item drop rate. If set to 100%, it will
 *   certainly drop.
