@@ -15,7 +15,7 @@ By the way, VisuStella plugins cannot be looked. It has been encrypted so I can 
 
 ## Terms of Use
 
-My plugins are free to use, distribute, and modifiy. Don't be hesitate to ask if there are problems, I would try to fix it.
+My plugins are free to use, distribute, and modify. Don't be hesitate to ask if there are problems, I would try to fix it.
 For compatibility issues, I would rather not touching encrypted scripts, better use their own add-on scripts.[See More](https://github.com/FrixellScriptWorks/RMMZ_REPO/blob/main/LICENSE)
 
 Be careful, if some of my plugins has dependencies, you must direct to their terms of use too.
